@@ -75,7 +75,8 @@ while cap.isOpened:
 
                 threading.Thread(target=say, args=(state, )).start()
                 cv2.putText(im0,state,(x_reg1,y_reg1),font,1,(0,255,0),3)       
-                
+                cv2.putText(im0,x[cls],(x1,y1),font,1,(0,255,0),3) # add label for detected object -> can be used in telling blind people who is coming
+
             else:
                 cv2.rectangle(im0,(x1,y1),(x2,y2),(255,0,0),3)
 

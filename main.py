@@ -36,7 +36,7 @@ while cap.isOpened:
         print("Video frame is empty or video processing has been successfully completed.")
         break
 
-    result = model(im0, stream=True, device=0)
+    result = model(im0, stream=True, device=0) #remove device=0 to use CPU if GPU is not available on your computer
     for r in result:
         boxes = r.boxes
 

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--====== Required meta tags ======-->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!--====== Title ======-->
+  <title>ASA - EDUHACKS</title>
+
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/svg" />
+
+  <!--====== Bootstrap css ======-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+  <!--====== Line Icons css ======-->
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
+
+  <!--====== Tiny Slider css ======-->
+  <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+
+  <!--====== gLightBox css ======-->
+  <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!--====== NAVBAR NINE PART START ======-->
+
+  <section class="navbar-area navbar-nine">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/logo.png" alt="Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNine"
+              aria-controls="navbarNine" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse sub-menu-bar" id="navbarNine">
+              <ul class="navbar-nav justify-content-center" style="width: 100%; margin-left: 0;">
+                <li class="nav-item">
+                  <a class="page-scroll active" href="#hero-area">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#services">More Detail</a>
+                </li>               
+              </ul>
+            </div>            
+          </nav>
+          <!-- navbar -->
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </section>
+
+  <!--====== NAVBAR NINE PART ENDS ======-->
+
+
+  <!-- Start header Area -->
+  <section id="hero-area" class="header-area header-eight">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-content">
+            <h1>ASA</h1>
+            <p style="width: 70%;">
+              Utilizing the cutting-edge YOLOv8 technology combined with the powerful pyttsx3 library, our product detects objects and safeguards blind people about potential obstacles in their daily lives. 
+            </p>
+            <div class="button">
+              <a href="https://github.com/alexnguyen104/EDUHACKS-ASA/tree/main/model" style="border-radius: 9px;
+              background: linear-gradient(188deg, #8A0202 -20.1%, rgba(255, 0, 0, 0.00) 165.12%); color: #fff;" class="btn primary-btn" target="_blank">Access our model</a>              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-image">
+            <img src="assets/images/header/hero.png" alt="#"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End header Area -->
+
+  
+
+  <!-- ===== service-area start ===== -->
+  <section id="services" class="services-area services-eight">
+    <!--======  Start Section Title Five ======-->
+    <div class="section-title-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h6>More Detail</h6>
+              <h2 class="fw-bold">How our model works and its applications</h2>              
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!--======  End Section Title Five ======-->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+          <div class="single-services">            
+            <div class="service-content">
+              <div class="illustration">
+                <img src="assets/images/1.png" alt="">
+              </div>              
+              <h4>Stage 1</h4>
+              <p>
+                The Model takes a video as input (can be real-time)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <div class="single-services">            
+            <div class="service-content">
+              <div class="illustration">
+                <img src="assets/images/2.png" alt="">
+              </div>              
+              <h4>Stage 2</h4>
+              <p>
+                Each frame is processed and eventually shows bounding boxes around detected objects/obstacles using yolov8n model
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <div class="single-services">            
+            <div class="service-content">
+              <div class="illustration">
+                <img src="assets/images/3.png" alt="">
+              </div>              
+              <h4>Stage 3</h4>
+              <p>
+                If the obstacles enter the “protected area”, an instruction is shown in text as well as sound (pyttsx3)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <div class="single-services">            
+            <div class="service-content">
+              <div class="illustration">                
+                <video width="430" height="260" controls>
+                  <source src="assets/video/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+              </div>              
+              <h4>Applications</h4>
+              <p>
+                Utilizing this model helps safeguard blind people about potential obstacles in their daily lives                
+              </p>
+              <a href="https://www.youtube.com/watch?v=NyLF8nHIquM" target="_blank" style="width: 100%; text-align: center; margin-top: 10px;">Original Video</a>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </section>
+  <!-- ===== service-area end ===== -->
+
+  <a href="#" class="scroll-top btn-hover">
+    <i class="lni lni-chevron-up"></i>
+  </a>
+
+  <!--====== js ======-->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/glightbox.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/tiny-slider.js"></script>
+
+  <script>
+
+    //===== close navbar-collapse when a  clicked
+    let navbarTogglerNine = document.querySelector(
+      ".navbar-nine .navbar-toggler"
+    );
+    navbarTogglerNine.addEventListener("click", function () {
+      navbarTogglerNine.classList.toggle("active");
+    });
+
+    // ==== left sidebar toggle
+    let sidebarLeft = document.querySelector(".sidebar-left");
+    let overlayLeft = document.querySelector(".overlay-left");
+    let sidebarClose = document.querySelector(".sidebar-close .close");
+
+    overlayLeft.addEventListener("click", function () {
+      sidebarLeft.classList.toggle("open");
+      overlayLeft.classList.toggle("open");
+    });
+    sidebarClose.addEventListener("click", function () {
+      sidebarLeft.classList.remove("open");
+      overlayLeft.classList.remove("open");
+    });
+
+    // ===== navbar nine sideMenu
+    let sideMenuLeftNine = document.querySelector(".navbar-nine .menu-bar");
+
+    sideMenuLeftNine.addEventListener("click", function () {
+      sidebarLeft.classList.add("open");
+      overlayLeft.classList.add("open");
+    });
+
+    //========= glightbox
+    GLightbox({
+      'href': 'https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM',
+      'type': 'video',
+      'source': 'youtube', //vimeo, youtube or local
+      'width': 900,
+      'autoplayVideos': true,
+    });
+
+  </script>
+</body>
+
+</html>

@@ -6,10 +6,10 @@ import pyttsx3
 import threading
 
 # use our testing video
-source = "videos/testing.mp4"
+#source = "videos/testing.mp4"
 
 # use camera
-# source = 0
+source = 0
 model = YOLO('yolov8n.pt')
 x = classNames
 font = cv2.FONT_HERSHEY_SIMPLEX

@@ -11,7 +11,7 @@ pip install ultralytics pyttsx3
 Allowing system to use GPU to process instead of CPU (if it is available on your computer)
 (CUDA 11.8)
 ```
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 Access the location of the model
 ```

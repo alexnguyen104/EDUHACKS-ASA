@@ -10,6 +10,7 @@ import threading
 
 # use camera
 source = 0
+
 model = YOLO('yolov8n.pt')
 x = classNames
 font = cv2.FONT_HERSHEY_SIMPLEX
@@ -61,7 +62,7 @@ while cap.isOpened:
             cls = int(box.cls[0])
 
             check_invasion = (x_reg2 - x1 >= 0 and x_reg2 - x1 < reg_w) or (x2 - x_reg1 >= 0 and x2 - x_reg1 < reg_w) or (x_reg2 - x1 > reg_w and x2 - x_reg1 > reg_w)
-            check_size = w*h > 50000 #estimated size to get expected distance -> not to accurate but it is acceptable
+            check_size = w*h > 50000 #estimated size to get expected distance -> not too accurate but it is acceptable
 
             if(check_invasion and check_size):
                 cv2.rectangle(im0,(x1,y1),(x2,y2),(0,0,255),3)
